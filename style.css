@@ -1,0 +1,353 @@
+*{
+    scroll-behavior: smooth !important;
+    
+}
+
+/* NAVIGATION BAR */
+
+.navbar{
+    transition: 1s all;
+}
+
+.navbar-color{
+    color: #000 ;
+}
+.navbar-scrolled {
+    color: black;
+    background-color: #E7E7E7;
+    box-shadow: 0px 5px 20px gray;
+    
+}
+.navbar-brand{
+    margin-left: 0;
+}
+
+.nav-item{
+    margin: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 14px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.bi-cart3{
+    padding-right: 2.9%;
+}
+
+/* END OF NAVIGATION BAR */
+
+/* CAROUSEL */
+.carousel-item{
+    transition: transform 3s ease, opacity 3s ease-out;
+}
+/* END OF CAROUSEL */
+
+/* VIDEO */
+.back-video{
+    position: absolute;
+}
+/* END OF VIDEO */
+
+/* FEATURED PRODUCTS */
+#featured{
+    width: 100vw;
+    margin-bottom: -200px;
+}
+#featured .featured{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.featured-top{
+    text-align: center;
+}
+.featured-title{
+    font-size: 22pt;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+.f-items{
+    display: inline-block;
+    padding: 20px;
+    transition: transform 0.5s;
+    transition: 0.5s;
+}
+
+.f-hats{
+    height: 450px;
+    
+}
+.f-hoodies{
+    height: 450px;
+
+}
+.f-tote{
+    height: 450px;
+}
+
+.f-items a{
+    color: black;
+    text-decoration: none;
+}
+
+.f-items:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 18px 0px #000;
+}
+/* END OF FEATURED PRODUCTS */
+
+/* ALL PRODUCTS */
+#all-products{
+    justify-content: center;
+    text-align: center;
+    margin: 8%;
+    
+}
+
+.col img{
+   height: 20%;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.card-text{
+    font-size: 10pt;
+}
+
+.col{
+    margin-bottom: 3.5%;
+    transition: transform 0.5s;
+}
+
+.col:hover{
+    transform: translateY(-5px);
+}
+
+#all{
+    padding-top:125px;
+}
+
+/* END OF ALL PRODUCTS */
+
+/* SINGLE PRODUCT */
+#product-details .details input{
+  padding-top: 0%;
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 12pt;
+    margin-right: 10px;
+    align-items: center   
+}
+
+#product-details .details input:focus{
+    outline: none;
+}
+
+#product-details .details select:focus{
+    outline: none;
+}
+
+#product-details .details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 12pt;
+ }
+
+.table-responsive-sm{
+    text-align: center;
+    width: 65%;
+    float: right;
+    margin-right: -10%;
+    font-size: 10pt;
+}
+
+/*START OF FAQS PAGE*/
+.faqss{
+    padding: 5%;
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+
+}
+
+.faq {
+
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #111;
+    cursor: pointer;
+}
+
+.question {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.question h3 {
+    font-size: 1.8rem;
+
+}
+.answer{
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 1.4s ease;
+}
+
+.answer ul{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.6s ease-in;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/*END OF FAQS PAGE*/
+
+/*BRAND START*/
+#brand{
+    width: 100vw;
+    padding-bottom: 100px;
+    padding-top: 7%;
+}
+
+.brand-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-bottom: 80px;  
+    z-index:-1;  
+}
+.brand-title h1{
+    padding-top:200px;
+    padding-bottom:85px;
+    font-size: 3rem;
+    text-align: center;
+}
+.brand-p{
+    text-align: justify;
+}
+.brand-p p{
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: 30px;
+}
+.brand-p span{
+    font-size: 40px;
+    font-weight: 900;
+}
+#brand-img{
+    margin-left: 500px;
+    height: 600px;
+    padding-top: 10%;
+    padding-left: 45px;
+    padding-bottom: 60px;
+ 
+
+}
+/*BRAND END*/
+
+/*START OF FOOTER*/
+.footer {
+    color: black;
+  }
+  
+  
+  .footer .qlink {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: gray;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
+  }
+  
+  .footer .qlink::before {
+    position: relative;
+    font-weight: 900;
+    color: black;
+    margin-right: 10px;
+  }
+  
+  .footer .qlink:hover {
+    color: var(--dark);
+    box-shadow: none;
+  }
+  
+  .footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid gray;
+  }
+  
+  
+  .footer .copyright a {
+    color: var(--dark);
+  }
+  
+  .footer .copyright a:hover {
+    color: var(--primary);
+  }
+/* END OF FOOTER */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+  color: #111;
+  background-color: lightgray;
+  border: #000 solid 1px;
+  border-radius: 1000px;
+  
+}
+
